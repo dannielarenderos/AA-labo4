@@ -73,24 +73,24 @@ return numeroMayor+2;
 }
 
 
-
-
 int main() {
   
-    int T, n, A=0, num;
-    cin>>T;
-    while(T>0){
-      cin>>n;
-      int arr[n];
-      for(int k=0; k<n; k++){
-        cin>>A;
-        arr[k]=A;
+    int Tam, num, Arreglo=0, numero;
+    cin>>Tam;
+
+
+    while(Tam>0){
+      cin>>num;
+      int arr[num];
+      for(int k=0; k<num; k++){
+        cin>>Arreglo;
+        arr[k]=Arreglo;
       }
 
-      quickSort(arr, 0, n-1);
-      num=verificar(n,arr);
-      cout<<num<<endl;
-      T--;
+      quickSort(arr, 0, num-1);
+      numero=verificar(num,arr);
+      cout<<numero<<endl;
+      Tam--;
     }
 
 
