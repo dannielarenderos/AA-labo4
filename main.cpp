@@ -90,7 +90,6 @@ int main() {
       quickSort(arr, 0, n-1);
       num=verificar(n,arr);
       cout<<num<<endl;
-
       T--;
     }
 
